@@ -1,0 +1,54 @@
+<h1>Atualizando Dados do Veículo</h1>
+<mat-form-field class="full-width">
+    <mat-label>Placa</mat-label>
+    <input [(ngModel)]="veiculo.placa" matInput placeholder="Placa">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Cor</mat-label>
+    <input [(ngModel)]="veiculo.cor" matInput placeholder="Cor">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Modelo</mat-label>
+    <input [(ngModel)]="veiculo.modelo" matInput placeholder="Modelo">
+</mat-form-field>
+
+
+
+<mat-form-field class="full-width">
+    <mat-label>Chassi</mat-label>
+    <input [(ngModel)]="veiculo.chassi" matInput placeholder="Chassi">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Ano</mat-label>
+    <input [(ngModel)]="veiculo.ano" matInput placeholder="Ano">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Diaria</mat-label>
+    <input [(ngModel)]="veiculo.diaria" matInput placeholder="Diaria">
+</mat-form-field>
+<mat-form-field class="full-width">
+    <mat-label>Fabricante</mat-label>
+    <input [(ngModel)]="veiculo.fabricante" matInput placeholder="Fabricante">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Nacionalidade</mat-label>
+    <input [(ngModel)]="veiculo.nacionalidade" matInput placeholder="Nacionalidade">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Categoria</mat-label>
+    <input [(ngModel)]="veiculo.categoria" matInput placeholder="Categoria">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+    <mat-label>Combustivel</mat-label>
+    <input [(ngModel)]="veiculo.combustivel" matInput placeholder="Combustivel">
+</mat-form-field>
+
+<button (click)="update()" mat-stroked-button color="accent">Alterar</button>
+<button (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>
