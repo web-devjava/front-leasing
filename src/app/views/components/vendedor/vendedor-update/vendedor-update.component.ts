@@ -43,6 +43,7 @@ export class VendedorUpdateComponent implements OnInit {
 
   findById():void {
     this.service.findById(this.id_vendedor).subscribe(resposta => {
+      this.service.message('Vendedor Alterado Com Sucesso, OK')
     this.vendedor = resposta;
 
     })

@@ -39,6 +39,7 @@ export class VeiculoCreateComponent implements OnInit {
   create(): void {
 
     this.service.create(this.veiculo).subscribe((resposta) => {
+      this.service.message('Veículo Cadastrado Com Sucesso, OK')
       this.router.navigate(['veiculos'])
     }
     )

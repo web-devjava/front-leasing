@@ -39,6 +39,7 @@ export class VeiculoUpdateComponent implements OnInit {
 
   update():void {
     this.service.update(this.veiculo).subscribe((resposta => {
+      this.service.message('Veículo Alterado Com Sucesso, OK')
       this.router.navigate(['veiculos'])
 
 

@@ -38,8 +38,14 @@ export class VeiculoService {
   
 
   }
+
+  delete(id :any):Observable<void>{
+    const url = `${this.veiculoUrl}${id}`;
+    return this.http.delete<void>(url);
+    
+  }
   message(msg : String): void { 
-    this.snack.open('Cliente Cadastrado', 'OK', {
+    this.snack.open('', 'OK', {
       horizontalPosition:'end',
       verticalPosition:'top',
       duration: 6000

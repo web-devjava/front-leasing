@@ -35,6 +35,7 @@ update(vendedor: Vendedor):Observable<Vendedor>{
 
   const url = this.vendedorUrl + vendedor.id;
   return this.http.put<Vendedor>(url, vendedor);
+  
 }
 
 delete(id : any):Observable<void>{
@@ -44,7 +45,7 @@ delete(id : any):Observable<void>{
 }
 
 message(msg : String): void { 
-  this.snack.open('Vendedor Cadastrado', 'OK', {
+  this.snack.open('Vendedor Excluído com Sucesso', 'OK', {
     horizontalPosition:'end',
     verticalPosition:'top',
     duration: 6000

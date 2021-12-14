@@ -36,6 +36,7 @@ export class VendedorCreateComponent implements  OnInit {
 
   create(): void {
     this.service.create(this.vendedor).subscribe((resposta) => {
+      this.service.message('Vendedor Cadastrado Com Sucesso, OK')
       this.router.navigate(['vendedor'])
 
     })
